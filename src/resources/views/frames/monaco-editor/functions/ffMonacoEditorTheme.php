@@ -1,13 +1,13 @@
 <?php
 
     if(!function_exists('ffMonacoEditorTheme')){
-        function ffMonacoEditorTheme(){
+        function ffMonacoEditorTheme($background){
             return '{
                 "base": "vs-dark",
                 "inherit": true,
                 "rules": [
                     {
-                    "background": "0C1021",
+                    "background": "#' . $background . '",
                     "token": ""
                     },
                     {
@@ -128,7 +128,7 @@
                 ],
                 "colors": {
                     "editor.foreground": "#F8F8F8",
-                    "editor.background": "#0C1021",
+                    "editor.background": "#' . $background . '",
                     "editor.selectionBackground": "#253B76",
                     "editor.lineHighlightBackground": "#FFFFFF0F",
                     "editorCursor.foreground": "#FFFFFFA6",

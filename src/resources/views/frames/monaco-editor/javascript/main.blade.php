@@ -2,8 +2,8 @@
 @include('frames::monaco-editor.javascript.init')
 
 <script>
-    
-    let theme = {!! ffMonacoEditorTheme() !!};
+   
+    let theme = {!! ffMonacoEditorTheme($background) !!};
     window.language = '{{ Request::get("language") ?? "plaintext" }}';
     window.editor = null;
     window.initialValue = '';
