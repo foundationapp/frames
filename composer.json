@@ -1,0 +1,54 @@
+{
+    "name": "foundationapp/frames",
+    "description": "The iFrame toolkit for Foundation",
+    "keywords": [
+        "foundationapp",
+        "frames"
+    ],
+    "homepage": "https://github.com/foundationapp/frames",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tony Lea",
+            "email": "tony@devdojo.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Foundationapp\\Frames\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Foundationapp\\Frames\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Foundationapp\\Frames\\FramesServiceProvider"
+            ],
+            "aliases": {
+                "Frames": "Foundationapp\\Frames\\FramesFacade"
+            }
+        }
+    }
+}
