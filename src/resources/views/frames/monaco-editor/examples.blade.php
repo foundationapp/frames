@@ -108,7 +108,7 @@
                 </select>
                 <div class="px-3 py-1 text-gray-100 border w-full border-gray-600 rounded"><p class="font-mono">{{ route('frames-monaco-editor') }}?language=<span x-text="language"></span></p></div>
             </div>
-            <iframe id="example-01" class="w-full min-h-[300px] rounded-b-md" border="0" :src="'{{ route('frames-monaco-editor') }}?language=' + language"></iframe>
+            <iframe id="example-01" class="w-full min-h-[300px] rounded-b-md" border="0" style="background: #{{ $background }}" :src="'{{ route('frames-monaco-editor') }}?language=' + language"></iframe>
         </div>
     </div>
 
@@ -133,7 +133,7 @@ codeEditor.set('let awesome = true;');</code></pre>
         </div>
         <div class="p-10 col-span-2 rounded-md overflow-hidden">
             
-            <iframe id="example-02" class="w-full min-h-[300px] rounded-md" border="0" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
+            <iframe id="example-02" class="w-full min-h-[300px] rounded-md" border="0" style="background: #{{ $background }}" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
         </div>
     </div>
 
@@ -157,7 +157,7 @@ codeEditor.addEventListener('ready', function(event){
             </div>
         </div>
         <div class="p-10 col-span-2 rounded-md overflow-hidden">
-            <iframe id="example-03" class="w-full overflow-hidden min-h-[300px] rounded-md" border="0" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
+            <iframe id="example-03" class="w-full overflow-hidden min-h-[300px] rounded-md" border="0" style="background: #{{ $background }}" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
         </div>
     </div>
 
@@ -193,7 +193,7 @@ alert(code);</code></pre>
         </div>
         <div class="p-10 col-span-2 rounded-md overflow-hidden">
             
-            <iframe id="example-04" class="w-full min-h-[300px] rounded-md" border="0" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
+            <iframe id="example-04" class="w-full min-h-[300px] rounded-md" border="0" style="background: #{{ $background }}" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
         </div>
     </div>
 
@@ -225,7 +225,7 @@ codeEditor.addEventListener('updated', function(event){
             </div>
         </div>
         <div class="p-10 col-span-2 rounded-md overflow-hidden">
-            <iframe id="example-05" class="w-full overflow-hidden min-h-[300px] rounded-md" border="0" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
+            <iframe id="example-05" class="w-full overflow-hidden min-h-[300px] rounded-md" border="0" style="background: #{{ $background }}" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
             <div class="bg-gray-50 font-mono text-xs p-3 mt-3 rounded-md border border-gray-100 relative overflow-hidden">
                 <div class="bg-gray-200 px-2 py-1 text-gray-600 rounded-br-lg text-[0.65rem] uppercase absolute top-0 left-0">Output</div>
                 <div id="output" class="p-5 whitespace-pre"></div>
@@ -254,7 +254,7 @@ codeEditor.addEventListener('focused', function(event){
             </div>
         </div>
         <div class="p-10 col-span-2 rounded-md overflow-hidden">
-            <iframe id="example-06" class="w-full overflow-hidden min-h-[300px] rounded-md" border="0" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
+            <iframe id="example-06" class="w-full overflow-hidden min-h-[300px] rounded-md" border="0" style="background: #{{ $background }}" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
         </div>
     </div>
 
@@ -279,7 +279,7 @@ codeEditor.addEventListener('blurred', function(event){
             </div>
         </div>
         <div class="p-10 col-span-2 rounded-md overflow-hidden">
-            <iframe id="example-07" class="w-full overflow-hidden min-h-[300px] rounded-md" border="0" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
+            <iframe id="example-07" class="w-full overflow-hidden min-h-[300px] rounded-md" border="0" style="background: #{{ $background }}" src="{{ route('frames-monaco-editor') }}?language=javascript"></iframe>
         </div>
     </div>
 
