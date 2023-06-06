@@ -25,7 +25,7 @@
             }
         @endif
 
-        .monaco-editor, #editor-placeholder {
+        #content, #editor-placeholder {
             padding-top: {{ Request::get("paddingTop") ?? "12px"; }}
         }
     </style>
