@@ -26,7 +26,8 @@
             fontSize: "15px",
             lineNumbersMinChars: 3,
             automaticLayout: true,
-            language: initialLanguage
+            language: initialLanguage,
+            minimap: { enabled: false },
         });
 
 
